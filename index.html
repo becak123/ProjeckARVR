@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Webcam - Select then Show</title>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="ui-container">
+    <div class="button-group">
+      <button onclick="selectAsset('low')">🤖 Robot</button>
+      <button onclick="selectAsset('moto')">🏍️ Motor</button>
+      <button onclick="selectAsset('lampu')">💡 Lampu</button>
+      
+      <button onclick="resetAR()" class="btn-reset">❌ Reset</button>
+    </div>
+    <p style="color: white; font-family: sans-serif; text-shadow: 1px 1px 2px black;">
+      Pilih tombol, lalu <b>klik layar</b> untuk memunculkan.
+    </p>
+  </div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>

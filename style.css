@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* Mengatur posisi tombol agar melayang di atas video */
+#ui-container {
+  position: absolute;
+  bottom: 30px; /* Jarak dari bawah */
+  width: 100%;
+  text-align: center;
+  z-index: 20; /* Pastikan di atas canvas p5.js */
+  pointer-events: none; /* Agar area kosong tembus klik ke canvas */
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  pointer-events: auto; /* Agar tombol bisa diklik */
+}
+
+button {
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: 2px solid white;
+  background: rgba(0, 0, 0, 0.6); /* Hitam transparan */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+button:active {
+  background: white;
+  color: black;
+}
+
+/* Gaya Khusus Tombol Reset */
+.btn-reset {
+  background: rgba(200, 0, 0, 0.8);
+  border-color: #ffaaaa;
+}
+
+.btn-reset:hover {
+  background: rgb(255, 0, 0);
+}
